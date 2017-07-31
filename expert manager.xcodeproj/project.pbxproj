@@ -8,19 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		6F6EDE971F2BA0E700A0D866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6EDE961F2BA0E700A0D866 /* AppDelegate.swift */; };
-		6F6EDE991F2BA0E700A0D866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6EDE981F2BA0E700A0D866 /* ViewController.swift */; };
+		6F6EDE991F2BA0E700A0D866 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6EDE981F2BA0E700A0D866 /* LoginViewController.swift */; };
 		6F6EDE9B1F2BA0E700A0D866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F6EDE9A1F2BA0E700A0D866 /* Assets.xcassets */; };
 		6F6EDE9E1F2BA0E700A0D866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F6EDE9C1F2BA0E700A0D866 /* Main.storyboard */; };
+		6F6EDEA71F2CFEDC00A0D866 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6EDEA61F2CFEDC00A0D866 /* MainWindowController.swift */; };
+		9AA26C60FD1A124A50DB430E /* Pods_expert_manager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60E2A9511D48C5D686EB464 /* Pods_expert_manager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		556C848697570BDEC38B5861 /* Pods-expert manager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expert manager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-expert manager/Pods-expert manager.debug.xcconfig"; sourceTree = "<group>"; };
 		6F6EDE931F2BA0E700A0D866 /* expert manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "expert manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6EDE961F2BA0E700A0D866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6F6EDE981F2BA0E700A0D866 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F6EDE981F2BA0E700A0D866 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6F6EDE9A1F2BA0E700A0D866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F6EDE9D1F2BA0E700A0D866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F6EDE9F1F2BA0E700A0D866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F6EDEA01F2BA0E700A0D866 /* expert_manager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = expert_manager.entitlements; sourceTree = "<group>"; };
+		6F6EDEA61F2CFEDC00A0D866 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		C60E2A9511D48C5D686EB464 /* Pods_expert_manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_expert_manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B17CE9CDB14147F5E591E8 /* Pods-expert manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expert manager.release.xcconfig"; path = "Pods/Target Support Files/Pods-expert manager/Pods-expert manager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +34,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AA26C60FD1A124A50DB430E /* Pods_expert_manager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		509F402F4A2A41B8A023EB4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				556C848697570BDEC38B5861 /* Pods-expert manager.debug.xcconfig */,
+				F4B17CE9CDB14147F5E591E8 /* Pods-expert manager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6F6EDE8A1F2BA0E700A0D866 = {
 			isa = PBXGroup;
 			children = (
 				6F6EDE951F2BA0E700A0D866 /* expert manager */,
 				6F6EDE941F2BA0E700A0D866 /* Products */,
+				509F402F4A2A41B8A023EB4F /* Pods */,
+				D205DCD43B659506F33EB2A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,13 +72,22 @@
 			isa = PBXGroup;
 			children = (
 				6F6EDE961F2BA0E700A0D866 /* AppDelegate.swift */,
-				6F6EDE981F2BA0E700A0D866 /* ViewController.swift */,
+				6F6EDE981F2BA0E700A0D866 /* LoginViewController.swift */,
+				6F6EDEA61F2CFEDC00A0D866 /* MainWindowController.swift */,
 				6F6EDE9A1F2BA0E700A0D866 /* Assets.xcassets */,
 				6F6EDE9C1F2BA0E700A0D866 /* Main.storyboard */,
 				6F6EDE9F1F2BA0E700A0D866 /* Info.plist */,
 				6F6EDEA01F2BA0E700A0D866 /* expert_manager.entitlements */,
 			);
 			path = "expert manager";
+			sourceTree = "<group>";
+		};
+		D205DCD43B659506F33EB2A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C60E2A9511D48C5D686EB464 /* Pods_expert_manager.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F6EDEA31F2BA0E700A0D866 /* Build configuration list for PBXNativeTarget "expert manager" */;
 			buildPhases = (
+				DFBDA0AD1E9C8FAF2831191A /* [CP] Check Pods Manifest.lock */,
 				6F6EDE8F1F2BA0E700A0D866 /* Sources */,
 				6F6EDE901F2BA0E700A0D866 /* Frameworks */,
 				6F6EDE911F2BA0E700A0D866 /* Resources */,
+				3CACA6037DAE6C37FCC3709B /* [CP] Embed Pods Frameworks */,
+				FA10CBEEC7333204919A39B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -95,6 +125,7 @@
 				TargetAttributes = {
 					6F6EDE921F2BA0E700A0D866 = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -128,13 +159,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3CACA6037DAE6C37FCC3709B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-expert manager/Pods-expert manager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFBDA0AD1E9C8FAF2831191A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA10CBEEC7333204919A39B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-expert manager/Pods-expert manager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6F6EDE8F1F2BA0E700A0D866 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F6EDE991F2BA0E700A0D866 /* ViewController.swift in Sources */,
+				6F6EDE991F2BA0E700A0D866 /* LoginViewController.swift in Sources */,
 				6F6EDE971F2BA0E700A0D866 /* AppDelegate.swift in Sources */,
+				6F6EDEA71F2CFEDC00A0D866 /* MainWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,28 +340,36 @@
 		};
 		6F6EDEA41F2BA0E700A0D866 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556C848697570BDEC38B5861 /* Pods-expert manager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "expert manager/expert_manager.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H86KV5J4UN;
 				INFOPLIST_FILE = "expert manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paretsdesign.expert-manager";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		6F6EDEA51F2BA0E700A0D866 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4B17CE9CDB14147F5E591E8 /* Pods-expert manager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "expert manager/expert_manager.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H86KV5J4UN;
 				INFOPLIST_FILE = "expert manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paretsdesign.expert-manager";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
